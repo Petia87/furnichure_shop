@@ -37,6 +37,7 @@ Variables
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
   --clr-black: #222;
+  --clr-brown-1: rgb(100, 69, 32);
 
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
@@ -347,6 +348,7 @@ Navbar
 .page .toggle-cart {
   color: var(--clr-grey-1);
 }
+
 /*
 =============== 
 Hero
@@ -358,6 +360,90 @@ Hero
   align-items: center;
   justify-content: center;
 }
+
+.slide {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+
+  /*width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;*/
+}
+
+.hero-tools {
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.hero-tools_first {
+  font-size: 5rem;
+  font-weight: bold;
+  padding-top: 100px;
+  color: var(--clr-primary-5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0.5rem
+}
+
+.hero-tools_year {
+  position: absolute;
+  top: 25%;
+  right: 20%;
+  font-size: 8rem;
+  color: var(--clr-brown-1);
+  letter-spacing: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+
+.hero-tools_second,
+.hero-tools_third {
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 8rem;
+  color: var(--clr-primary-5);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero-tools_off {
+  font-weight: bold;
+  font-size: 6rem;
+  color: var(--clr-brown-1);
+  font-family: 'Segoe UI';
+  position: absolute;
+  top: 35%;
+  right: 20%;
+}
+.hero-tools_p{
+  color: var(--clr-grey-5);
+font-size: 3rem;
+padding-top:3rem;
+line-height: 2rem;
+text-transform: uppercase;
+}
+
+.hero-img1 {
+  width: 80%;
+}
+
+.hero-img2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.flex {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color:var(--clr-grey-1);
+  line-height: 2rem;
+}
+
 .hero-btn {
   color: var(--clr-white);
   background: transparent;
@@ -370,19 +456,22 @@ Hero
   border-radius: var(--radius);
   transition: var(--transition);
 }
+
 .hero-btn:hover {
   background: var(--clr-white);
   color: var(--clr-primary-5);
 }
 
+
 [data-component="slideshow"] .slide {
-	display: none;
+  display: none;
   text-align: center;
 }
 
 [data-component="slideshow"] .slide.active {
-	display: block;
+  display: block;
 }
+
 /* --------------- End of Hero ---------------- */
 
 /*=============== 

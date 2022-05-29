@@ -41,7 +41,7 @@
           </li>
         </ul>
       </div>
-      
+
       <!-- cart icon -->
       <div class="toggle-container">
         <button class="toggle-cart">
@@ -54,37 +54,52 @@
 
 
   <!-- hero -->
-  <div class="hero" id="slideshow-example" data-component="slideshow">
-    <div role="list">
+  <div class="hero" role="list"id="slideshow-example" data-component="slideshow">
+    <div role="list" class="hero-container">
       <div class="slide">
-        <img src="/images/sofa/round-chair.png" alt="">
-        <h1 class="">furniture collection</h1>
-        <a href="products.html" class="hero-btn">
-          show now
-        </a>
+        <div class="flex">
+          <div><img class="hero-img1" src="/images/sofa/round-chair.png" alt=""></div>
+          <div class="hero-tools">
+            <h1 class="hero-tools_first">New collection</h1>
+            <h2 class="hero-tools_year">2022</h2>
+              <a href="products.html" class="hero-btn">
+              show now
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="slide">
-        <img src="/images/sofa/round-chair.png" alt="">
-        <h1>collection</h1>
-        <span>2022</span>
-        <a href="products.html" class="hero-btn">
-          show now
-        </a>
+        <div class="flex">
+          <div><img class="hero-img2" src="/images/sofa/best-selling-1.png" alt=""></div>
+          <div class="hero-tools">
+            <h1 class="hero-tools_second">-60%</h1>
+            <h2 class="hero-tools_off">OFF</h2>
+            <p class="hero-tools_p">all sofas</p>
+            <a href="products.html" class="hero-btn">
+              show now
+            </a>
+          </div>
+        </div>
       </div>
+
       <div class="slide">
-        <img src="/images/sofa/round-chair.png" alt="">
-        <h1> -40%</h1>
-        <span>OFF</span>
-        <p>of selected furniture and home accessories</p>
-        <a href="products.html" class="hero-btn">
-          show now
-        </a>
+        <div class="flex">
+          <div><img class="hero-img3" src="/images/other/poltronas-promocao.png" alt=""></div>
+          <div class="hero-tools">
+            <h1 class="hero-tools_third">-40%</h1>
+            <h2 class="hero-tools_off">OFF</h2>
+            <p class="hero-tools_p"> selected furniture</p>
+            <a href="products.html" class="hero-btn">
+              show now
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
   <End hero -->
-    
+
     <!-- sidebar -->
     <div class="sidebar-overlay">
       <aside class="sidebar">
@@ -170,5 +185,6 @@
       </a>
     </section>
     <script type="module" src="index.js"></script>
-  </body>
+</body>
+
 </html>
